@@ -327,7 +327,7 @@ description: Personal academic website for Kaan APAK.
         "hero.portraitAlt": "Kaan APAK portresi",
         "hero.downloadCv": "CV'yi indir",
         "hero.linkedinLabel": "LinkedIn profili",
-        "hero.panelLabel": "Karar desteği",
+        "hero.panelLabel": "Karar destek sistemleri",
         "hero.panelText": "Karmaşık verileri ve operasyonel kısıtları uygulanabilir araçlara dönüştürmek.",
         "experience.heading": "Deneyim",
         "experience.subheading": "Üniversite ve endüstri ortamlarında araştırma, analitik, öğretim ve karar destek çalışmaları.",
