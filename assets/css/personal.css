@@ -146,8 +146,13 @@ body:has(.ka-home) main:not(.ka-home) {
 
 .ka-top-controls {
   align-items: center;
+  backdrop-filter: blur(18px);
+  background: rgba(7, 9, 13, 0.74);
+  border: 1px solid var(--ka-line);
+  border-radius: 999px;
   display: flex;
   gap: 0.45rem;
+  padding: 0.42rem;
   position: fixed;
   right: 1.1rem;
   top: 1.1rem;
@@ -241,6 +246,11 @@ body:has(.ka-home) main:not(.ka-home) {
   box-shadow: 0 14px 40px rgba(20, 42, 67, 0.1);
 }
 
+.ka-home[data-ka-theme="light"] .ka-top-controls {
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 14px 40px rgba(20, 42, 67, 0.1);
+}
+
 .ka-home[data-ka-theme="light"] .ka-floating-nav a:hover,
 .ka-home[data-ka-theme="light"] .ka-floating-nav a:focus-visible,
 .ka-home[data-ka-theme="light"] .ka-theme-toggle:hover,
@@ -274,7 +284,7 @@ body:has(.ka-home) main:not(.ka-home) {
 
 .ka-hero h1 {
   color: var(--ka-text);
-  font-size: clamp(4rem, 10.5vw, 8.7rem);
+  font-size: clamp(3.8rem, 8.6vw, 7.4rem);
   font-weight: 820;
   letter-spacing: 0;
   line-height: 0.86;
@@ -984,35 +994,40 @@ body:has(.ka-home) main:not(.ka-home) {
   }
 
   .ka-top-controls {
-    gap: 0.38rem;
+    gap: 0.12rem;
+    padding: 0.28rem;
     right: 0.85rem;
-    top: 0.7rem;
+    top: 0.75rem;
   }
 
   .ka-lang-toggle {
-    padding: 0.08rem;
+    background: transparent;
+    border: 0;
+    padding: 0;
   }
 
   .ka-lang-button {
     display: inline-flex;
-    font-size: 0.9rem;
-    height: 27px;
-    width: 27px;
+    font-size: 1.08rem;
+    height: 34px;
+    width: 34px;
   }
 
   .ka-theme-toggle {
-    height: 29px;
-    min-width: 29px;
+    background: transparent;
+    border: 0;
+    height: 36px;
+    min-width: 36px;
     padding: 0;
   }
 
   .ka-theme-toggle svg {
-    height: 15px;
-    width: 15px;
+    height: 18px;
+    width: 18px;
   }
 
   .ka-hero {
-    padding-top: 4.85rem;
+    padding-top: 6.1rem;
   }
 
   .ka-hero h1 {
