@@ -6,7 +6,7 @@ nav: false
 description: Personal academic website for Kaan APAK.
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/personal.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/personal.css' | relative_url }}?v=20260627-button-text">
 
 <main class="ka-home" data-ka-theme="dark" data-ka-lang="en">
   <nav class="ka-floating-nav" aria-label="Homepage sections">
