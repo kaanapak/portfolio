@@ -6,7 +6,7 @@ nav: false
 description: Personal academic website for Kaan APAK.
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/personal.css' | relative_url }}?v=20260627-button-text">
+<link rel="stylesheet" href="{{ '/assets/css/personal.css' | relative_url }}?v=20260627-mobile-controls-thick">
 
 <main class="ka-home" data-ka-theme="dark" data-ka-lang="en">
   <nav class="ka-floating-nav" aria-label="Homepage sections">
@@ -412,11 +412,27 @@ description: Personal academic website for Kaan APAK.
       window.localStorage.setItem("ka-language-v1", nextLanguage);
     }
 
+    function hintExperienceTrack() {
+      var track = document.querySelector(".ka-experience-track");
+      var isMobile = window.matchMedia("(max-width: 560px)").matches;
+      if (!track || !isMobile || track.scrollLeft > 8) return;
+
+      window.requestAnimationFrame(function () {
+        window.requestAnimationFrame(function () {
+          var maxScroll = track.scrollWidth - track.clientWidth;
+          if (maxScroll <= 0) return;
+
+          track.scrollLeft = Math.min(96, maxScroll);
+        });
+      });
+    }
+
     var savedTheme = window.localStorage.getItem("ka-theme-v2") || "dark";
     var savedLanguage = window.localStorage.getItem("ka-language-v1") || "en";
 
     applyTheme(savedTheme === "light" ? "light" : "dark");
     applyLanguage(savedLanguage === "tr" ? "tr" : "en");
+    hintExperienceTrack();
 
     themeToggle.addEventListener("click", function () {
       applyTheme(home.dataset.kaTheme === "light" ? "dark" : "light");
