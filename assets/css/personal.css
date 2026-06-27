@@ -944,7 +944,53 @@ body:has(.ka-home) main:not(.ka-home) {
 
 @media (max-width: 560px) {
   .ka-home {
-    padding-inline: 0.9rem;
+    margin-top: -2.1rem;
+    padding: 0.35rem 0.85rem 3.6rem;
+  }
+
+  .ka-floating-nav {
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    gap: 0.12rem;
+    padding: 0.26rem;
+    width: calc(100vw - 1.35rem);
+  }
+
+  .ka-floating-nav a {
+    font-size: 0.68rem;
+    min-width: 0;
+    padding: 0.58rem 0.18rem;
+  }
+
+  .ka-lang-toggle {
+    flex: 0 0 auto;
+    padding: 0.12rem;
+  }
+
+  .ka-lang-button {
+    display: none;
+    font-size: 0.9rem;
+    height: 28px;
+    width: 30px;
+  }
+
+  .ka-lang-button[aria-pressed="false"] {
+    display: inline-flex;
+  }
+
+  .ka-theme-toggle {
+    flex: 0 0 auto;
+    height: 31px;
+    min-width: 31px;
+    padding: 0;
+  }
+
+  .ka-theme-toggle svg {
+    height: 15px;
+    width: 15px;
+  }
+
+  .ka-hero {
+    padding-top: 3.1rem;
   }
 
   .ka-hero h1 {
