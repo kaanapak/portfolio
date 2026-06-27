@@ -953,10 +953,11 @@ body:has(.ka-home) main:not(.ka-home) {
 
   .ka-experience-track {
     gap: 0.85rem;
+    scroll-snap-type: none;
   }
 
   .ka-experience-card {
-    flex-basis: 88vw;
+    flex-basis: 80vw;
     min-width: 260px;
   }
 
