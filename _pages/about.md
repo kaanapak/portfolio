@@ -14,6 +14,9 @@ description: Personal academic website for Kaan APAK.
     <a href="#experience" data-i18n="nav.experience">Experience</a>
     <a href="#projects" data-i18n="nav.projects">Projects</a>
     <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <div class="ka-top-controls" aria-label="Display options">
     <div class="ka-lang-toggle" aria-label="Language">
       <button class="ka-lang-button" type="button" data-lang-option="en" aria-label="English" aria-pressed="true">🇬🇧</button>
       <button class="ka-lang-button" type="button" data-lang-option="tr" aria-label="Türkçe" aria-pressed="false">🇹🇷</button>
@@ -26,7 +29,7 @@ description: Personal academic website for Kaan APAK.
         <path d="M20.2 15.55A8.3 8.3 0 0 1 8.45 3.8 8.7 8.7 0 1 0 20.2 15.55Z" />
       </svg>
     </button>
-  </nav>
+  </div>
 
   <div class="ka-shell">
     <section class="ka-hero" id="home" aria-labelledby="ka-hero-title">
