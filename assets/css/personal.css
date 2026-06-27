@@ -267,7 +267,7 @@ body:has(.ka-home) main:not(.ka-home) {
   gap: clamp(2rem, 5vw, 5rem);
   grid-template-columns: minmax(0, 1.02fr) minmax(330px, 0.78fr);
   min-height: 92vh;
-  padding: clamp(5.2rem, 9vw, 7.8rem) 0 2rem;
+  padding: clamp(3.25rem, 5vw, 4.8rem) 0 2rem;
 }
 
 .ka-hero__copy {
